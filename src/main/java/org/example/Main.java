@@ -9,6 +9,10 @@ import java.util.Scanner;
  *
  */
 public class Main {
+    private static final int ADD_MOVIE = 1;
+    private static final int VIEW_ALL_MOVIES = 2;
+    private static final int QUIT = 3;
+    
     /**
      *
      * Driver of the main program.
