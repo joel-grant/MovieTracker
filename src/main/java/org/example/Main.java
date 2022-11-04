@@ -20,6 +20,8 @@ public class Main {
         String response = "";
         System.out.println("Welcome to the Movie Tracker!");
 
+        MovieList movies = new MovieList();
+
         while (!response.equals("3")) {
             System.out.println("Please enter the number of the selection you wish to make.");
             System.out.println("1. Add a new movie to your tracker.");
@@ -29,7 +31,6 @@ public class Main {
             response = userInput.next();
 
             if (response.equals("1")) {
-//            System.out.print("WOMP WOMP");
                 Movie newMovie = new Movie();
                 System.out.println("Enter the name of the movie");
                 newMovie.setMovieName(userInput.next());
@@ -40,6 +41,10 @@ public class Main {
                 System.out.println(newMovie.getMovieName());
                 System.out.println(newMovie.getTimesWatched());
                 System.out.println(newMovie.getMovieWatched());
+                movies.addNewMovie(newMovie);
+            }
+            else if (response.equals("2")) {
+                movies.getAllMovies();
             }
 
         }
