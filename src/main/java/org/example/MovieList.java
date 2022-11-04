@@ -39,6 +39,7 @@ public class MovieList {
     public void getAllMovies() {
         for (int i = 0; i < movies.length -1; i++) {
             System.out.println(movies[i].getMovieName());
+            System.out.println();
         }
     }
 
